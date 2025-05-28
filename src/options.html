@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Extension Settings</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 10px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 8px 16px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+    #status, #currentKeyStatus {
+      margin-top: 10px;
+    }
+    #currentKeyStatus {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Extension Settings</h2>
+  <div id="currentKeyStatus"></div>
+  <label for="apiKey">Enter your Gemini API Key:</label>
+  <input type="text" id="apiKey" placeholder="YOUR_GEMINI_API_KEY">
+  <button id="save">Save</button>
+  <button id="delete">Delete API Key</button>
+  <p id="status"></p>
+  <script src="options.js"></script>
+</body>
+</html>
